@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal|top"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="380dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/grad"
+        android:elevation="6dp"
+        android:gravity="top|center_horizontal"
+        android:stateListAnimator="@null"
+        android:text="$"
+        android:textColor="#ffffff"
+        android:textSize="50sp"
+
+        android:translationZ="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="380dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="20dp"
+        android:gravity="top|center_horizontal"
+        android:text="Crypton is a truly breakthrough cryptocurrency that guarantees complete privacy protection"
+        android:textSize="25sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button_json"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="155dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="top|center_horizontal"
+        android:text="update"
+        android:textSize="30sp"
+        android:textStyle="normal"
+        android:elevation="6dp"
+        android:stateListAnimator="@null"
+        android:translationZ="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="155dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:text="TRADE"
+        android:elevation="6dp"
+        android:stateListAnimator="@null"
+        android:translationZ="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="155dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:elevation="6dp"
+        android:stateListAnimator="@null"
+        android:translationZ="4dp"
+        android:text="Learn more"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/button_json"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:srcCompat="@mipmap/app_icon2" />
+</android.support.constraint.ConstraintLayout>
+
+
+
+
+
+
